@@ -26,26 +26,42 @@
       <button onclick="updateCalculation('-');" class="box">-</button>
       <button onclick="updateCalculation('/');" class="box">/</button>
       <button onclick="updateCalculation('*');" class="box">*</button>
-      <button onclick="calculation = eval(calculation); console.log(calculation); document.querySelector('.screen').innerHTML = calculation;" class="box">=</button>
-      <button onclick="calculation=''; console.log('calculation was reset'); document.querySelector('.screen').innerHTML = 0;" class="box1">Reset</button>
+      <button
+        onclick="calculation = eval(calculation); console.log(calculation); document.querySelector('.screen').innerHTML = calculation;"
+        class="box">=</button>
+      <button
+        onclick="calculation=''; console.log('calculation was reset'); document.querySelector('.screen').innerHTML = 0;"
+        class="box1">Reset</button>
     </div>
   </div>
   <br><br><br><br><br>
   <h1>Rock Paper Scissors</h1>
   <div class="rps">
-    <div class="rpssubtitlebox"><p class="rpssubtitle">Pick a move</p></div>
+    <div class="rpssubtitlebox">
+      <p class="rpssubtitle">Pick a move</p>
+    </div>
     <div class="pmoves">
       <button onclick="playGame('rock')" class="gamebtn">Rock</button>
       <button onclick="playGame('paper')" class="gamebtn">Paper</button>
       <button onclick="playGame('scissors')" class="gamebtn">Scissors</button>
     </div>
-    <div class="rpssubtitlebox"><p class="rpssubtitle">Result:</p></div>
+    <div class="rpssubtitlebox">
+      <p class="rpssubtitle">Result:</p>
+    </div>
     <div class="ResultsBox">
-      <div class="score"><p class="winsd">Wins: 0</p></div>
-      <div class="score"><p class="lossesd">Losses: 0</p></div>
-      <div class="score"><p class="tiesd">Ties: 0</p></div>
+      <div class="score">
+        <p class="winsd">Wins: 0</p>
+      </div>
+      <div class="score">
+        <p class="lossesd">Losses: 0</p>
+      </div>
+      <div class="score">
+        <p class="tiesd">Ties: 0</p>
+      </div>
       <div class="extras">
-        <div class="overall"><p class="overalltxt">Overall: --</p></div>
+        <div class="overall">
+          <p class="overalltxt">Result: --</p>
+        </div>
         <div class="resetscore"><button onclick="resetScore();" class="resetscorebtn">Reset score</button></div>
       </div>
     </div>
@@ -56,50 +72,148 @@
     <div class="shoplist">
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
       <div class="item1">
         <img src="" alt="" width="170px" height="140px" class="itemimg">
-        <div class="info"><h3>Price:$5.99</h3><h3>Quantity</h3></div>
-        <button class="addToCart">Add to cart</button>
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
       </div>
     </div>
     <div class="checkout">
-      
+      <div class="summaryBox">
+        <div><p class="cartList">Cart:</p></div>
+        <p class="cartCost">Cost:</p>
+        <p class="cartTax">Tax:</p>
+        <p class="totalC">Total:</p>
+      </div>
+      <div class="buyNowBox">
+        <button class="buyNow">Buy now</button>
+        <button class="resetCart">Reset Cart</button>
+      </div>
     </div>
   </div>
   <style>
+    .summaryBox {
+      all: unset;
+      width: 95%;
+      height: 50px;
+      background-color: indianred;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      
+    }
+    .resetCart {
+      all: unset;
+      background-color: #4CAF50;
+      width: 130px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      border-radius: 5px;
+      margin: 5px 20px 5px 20px;
+    }
+    .buyNow {
+      all: unset;
+      background-color: #4CAF50;
+      width: 130px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      border-radius: 5px;
+      margin: 5px 20px 5px 20px;
+    }
+    .buyNowBox {
+      width: 95%;
+      height: 80px;
+      background-color: maroon;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cartTax { 
+      font-size: 20px;
+    }
+    .totalC {
+      font-size: 20px;
+    }
+    .cartCost {
+      font-size: 20px;
+    }
+    .cartList {
+      font-size: 20px;
+    }
+    .checkout {
+      margin: 0px 10px 10px 10px;
+      height: 150px;
+      width: 880px;
+      background-color: orange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
     .screenbtn {
       all: unset;
       background-color: #0d4b08;
@@ -121,6 +235,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .resetscorebtn {
       all: unset;
       background-color: #419cd1;
@@ -130,11 +245,13 @@
       justify-content: center;
       align-items: center;
     }
+
     .resetscorebtn:hover {
       border: 1px solid black;
       box-shadow: 0px 0px 5px black;
       border-radius: 10px;
     }
+
     .resetscore {
       background-color: #4CAF50;
       height: 30px;
@@ -143,11 +260,13 @@
       align-items: center;
       justify-content: center;
     }
+
     .overalltxt {
       all: unset;
       color: black;
       font-weight: bold;
     }
+
     .overall {
       background-color: yellow;
       height: 30px;
@@ -156,12 +275,14 @@
       justify-content: center;
       align-items: center;
     }
+
     .extras {
       background-color: blue;
       width: 300px;
       height: 30px;
       display: flex;
     }
+
     .score {
       background-color: fuchsia;
       width: 80px;
@@ -176,19 +297,22 @@
       height: 93px;
       width: auto;
       background-color: red;
-      display:  flex;
+      display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
     }
+
     .rpssubtitlebox {
       background-color: #f0f0f0;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
     .rpssubtitle {
       all: unset;
     }
+
     .pmoves {
       background-color: violet;
       display: flex;
@@ -197,6 +321,7 @@
       padding: 10px;
       height: 50px;
     }
+
     .gamebtn {
       all: unset;
       background-color: #4CAF50;
@@ -205,10 +330,12 @@
       text-align: center;
       border-radius: 50%;
     }
+
     .gamebtn:hover {
       border: 1px solid black;
       box-shadow: 0px 0px 3px black;
     }
+
     .rps {
       border: 2px solid black;
       border-radius: 2px;
@@ -216,16 +343,19 @@
       height: 200px;
       width: 400px;
     }
+
     .info {
       /* background-color: green; */
       width: 200px;
       display: flex;
       justify-content: space-evenly;
     }
+
     h3 {
       all: unset;
       background-color: white;
     }
+
     .addToCart {
       width: 170px;
       line-height: 20px;
@@ -233,13 +363,6 @@
       margin: 5px;
       border: 1px solid black;
       border-radius: 10px;
-    }
-    .checkout {
-      margin: 0px 10px 10px 10px;
-      height: 280px;
-      width: 880px;
-      background-color: orange;
-      display: block;
     }
 
     .itemimg {
@@ -259,13 +382,14 @@
 
     .shop {
       width: 900px;
-      height: 770px;
+      height: 650px;
       background-color: red;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
     }
+
     .shoplist {
       margin: 10px;
       width: 880px;
@@ -334,6 +458,7 @@
       border: none;
       display: block;
     }
+
     .box1 {
       width: 50px;
       height: 16px;
@@ -368,6 +493,7 @@
       document.querySelector('.winsd').innerHTML = `Wins: ${score.wins}`;
       document.querySelector('.lossesd').innerHTML = `Losses: ${score.losses}`;
       document.querySelector('.tiesd').innerHTML = `Ties: ${score.ties}`;
+      document.querySelector('.overalltxt').innerHTML = `Result: --`
     }
 
     function playGame(playerMove) {
@@ -418,8 +544,8 @@
       }
       localStorage.setItem('score', JSON.stringify(score));
 
-      alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
-Wins: ${score.wins} Losses: ${score.losses} Ties: ${score.ties}`);
+//       alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
+// Wins: ${score.wins} Losses: ${score.losses} Ties: ${score.ties}`);
     }
     function pickComputerMove() {
       const randomNumber = Math.random();
@@ -433,6 +559,20 @@ Wins: ${score.wins} Losses: ${score.losses} Ties: ${score.ties}`);
       }
 
       return computerMove;
+    }
+
+    let cQuantity = 0;
+    let totalC = 0;
+    let cartCost = 0;
+    function updateCart(item, cost) {
+      cQuantity ++;
+      cartCost += Number(cost);
+      cartCost = Math.round(cartCost)
+      totalC += Number(cost);
+      totalC = Math.round(totalC)
+      document.querySelector('.cartList').innerHTML = ` Cart: ${cQuantity} * ${item}`
+      document.querySelector('.totalC').innerHTML = `Total: $${totalC}`;
+      document.querySelector('.cartCost').innerHTML = `Cost: $${cartCost}`;
     }
   </script>
 </body>
