@@ -194,7 +194,7 @@ function updateScoreDisplay() {
   document.querySelector('.overalltxt').innerHTML = `--`;
 }
 
-window.onload = function() {
+window.onload = function () {
   updateScoreDisplay();
 };
 
@@ -215,4 +215,18 @@ function updateCart(item, cost) {
   document.querySelector('.totalC').innerHTML = `Total: $${totalC}`;
   document.querySelector('.cartCost').innerHTML = `Cost: $${cartCost}`;
   document.querySelector('.cartTax').innerHTML = `Tax: $${cartTax}`;
+}
+
+function resetCart() {
+  cQuantity = 0;
+  totalC = 0;
+  cartCost = 0;
+  cartTax = 0;
+  updateCartDisplay();
+}
+function updateCartDisplay() {
+  document.querySelector('.cartList').innerHTML = ` Cart: ${cQuantity} * --`;
+  document.querySelector('.totalC').innerHTML = `Total: $0`;
+  document.querySelector('.cartCost').innerHTML = `Cost: $0`;
+  document.querySelector('.cartTax').innerHTML = `Tax: $0`;
 }
