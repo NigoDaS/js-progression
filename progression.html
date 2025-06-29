@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="progression.css">
+  <title>practice</title>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <div class="calculator">
+    <div class="container">
+      <div class="screen"><button class="screenbtn">Calculate!</button></div>
+      <button onclick="updateCalculation('1');" class="box">1</button>
+      <button onclick="updateCalculation('2');" class="box">2</button>
+      <button onclick="updateCalculation('3');" class="box">3</button>
+      <button onclick="updateCalculation('4');" class="box">4</button>
+      <button onclick="updateCalculation('5');" class="box">5</button>
+      <button onclick="updateCalculation('6');" class="box">6</button>
+      <button onclick="updateCalculation('7');" class="box">7</button>
+      <button onclick="updateCalculation('8');" class="box">8</button>
+      <button onclick="updateCalculation('9');" class="box">9</button>
+      <button onclick="updateCalculation('+');" class="box">+</button>
+      <button onclick="updateCalculation('0');" class="box">0</button>
+      <button onclick="updateCalculation('-');" class="box">-</button>
+      <button onclick="updateCalculation('/');" class="box">/</button>
+      <button onclick="updateCalculation('*');" class="box">*</button>
+      <button
+        onclick="calculation = eval(calculation); console.log(calculation); document.querySelector('.screen').innerHTML = calculation;"
+        class="box">=</button>
+      <button
+        onclick="calculation=''; console.log('calculation was reset'); document.querySelector('.screen').innerHTML = 0;"
+        class="box1">Reset</button>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <h1>Rock Paper Scissors</h1>
+  <div class="rps">
+    <div class="rpssubtitlebox">
+      <p class="rpssubtitle">Pick a move</p>
+    </div>
+    <div class="pmoves">
+      <button onclick="playGame('rock')" class="gamebtn">Rock</button>
+      <button onclick="playGame('paper')" class="gamebtn">Paper</button>
+      <button onclick="playGame('scissors')" class="gamebtn">Scissors</button>
+    </div>
+    <div class="rpssubtitlebox">
+      <p class="rpssubtitle">Result:</p>
+    </div>
+    <div class="ResultsBox">
+      <div class="score">
+        <p class="winsd">Wins: 0</p>
+      </div>
+      <div class="score">
+        <p class="lossesd">Losses: 0</p>
+      </div>
+      <div class="score">
+        <p class="tiesd">Ties: 0</p>
+      </div>
+      <div class="extras">
+        <div class="overall">
+          <p class="overalltxt">Result: --</p>
+        </div>
+        <div class="resetscore"><button onclick="resetScore();" class="resetscorebtn">Reset score</button></div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <h1>Shop</h1>
+  <div class="shop">
+    <div class="shoplist">
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+      <div class="item1">
+        <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
+          width="170px" height="140px" class="itemimg">
+        <div class="info">
+          <h3>Price:$5.99</h3>
+          <h3>Quantity</h3>
+        </div>
+        <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+      </div>
+    </div>
+    <div class="checkout">
+      <div class="summaryBox">
+        <div>
+          <p class="cartList">Cart:</p>
+        </div>
+        <p class="cartCost">Cost:</p>
+        <p class="cartTax">Tax:</p>
+        <p class="totalC">Total:</p>
+      </div>
+      <div class="buyNowBox">
+        <button class="buyNow">Buy now</button>
+        <button onclick="resetCart()" class="resetCart">Reset Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="progression.js"></script>
+</html>

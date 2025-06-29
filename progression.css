@@ -1,0 +1,329 @@
+  .summaryBox {
+    all: unset;
+    width: 95%;
+    height: 50px;
+    background-color: indianred;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .resetCart {
+    all: unset;
+    background-color: #4CAF50;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 5px 20px 5px 20px;
+  }
+
+  .buyNow {
+    all: unset;
+    background-color: #4CAF50;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 5px 20px 5px 20px;
+  }
+
+  .buyNowBox {
+    width: 95%;
+    height: 80px;
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cartTax {
+    font-size: 20px;
+  }
+
+  .totalC {
+    font-size: 20px;
+  }
+
+  .cartCost {
+    font-size: 20px;
+  }
+
+  .cartList {
+    font-size: 20px;
+  }
+
+  .checkout {
+    margin: 0px 10px 10px 10px;
+    height: 150px;
+    width: 880px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .screenbtn {
+    all: unset;
+    background-color: #0d4b08;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .screen {
+    background-color: #0d4b08;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .resetscorebtn {
+    all: unset;
+    background-color: #419cd1;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resetscorebtn:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+  }
+
+  .resetscore {
+    background-color: #4CAF50;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overalltxt {
+    all: unset;
+    color: black;
+    font-weight: bold;
+  }
+
+  .overall {
+    background-color: yellow;
+    height: 30px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .extras {
+    background-color: blue;
+    width: 300px;
+    height: 30px;
+    display: flex;
+  }
+
+  .score {
+    background-color: fuchsia;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto auto auto;
+  }
+
+  .ResultsBox {
+    height: 93px;
+    width: auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .rpssubtitlebox {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rpssubtitle {
+    all: unset;
+  }
+
+  .pmoves {
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .gamebtn {
+    all: unset;
+    background-color: #4CAF50;
+    height: 50px;
+    width: 55px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .gamebtn:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+  }
+
+  .rps {
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: rosybrown;
+    height: 200px;
+    width: 400px;
+  }
+
+  .info {
+    /* background-color: green; */
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h3 {
+    all: unset;
+    background-color: white;
+  }
+
+  .addToCart {
+    width: 170px;
+    line-height: 20px;
+    display: inline;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .itemimg {
+    margin: 5px;
+  }
+
+  .item1 {
+    all: unset;
+    width: 200px;
+    height: 210px;
+    background-color: blue;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop {
+    width: 900px;
+    height: 650px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shoplist {
+    margin: 10px;
+    width: 880px;
+    height: 463px;
+    background-color: orangered;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .calculator {
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px 5px;
+    background-color: black;
+    display: flex;
+    border-radius: 5%;
+
+  }
+
+  .container {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container button {
+    margin: 5px;
+  }
+
+  button:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+  }
+
+  button:active {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    opacity: 40%;
+  }
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    color: blue;
+    display: block;
+    text-align: center;
+  }
+
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(46, 89, 138);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    display: block;
+  }
+
+  .box1 {
+    width: 50px;
+    height: 16px;
+    background-color: rgb(46, 89, 138);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    display: block;
+  }
