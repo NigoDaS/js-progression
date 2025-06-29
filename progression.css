@@ -1,329 +1,379 @@
-  .summaryBox {
-    all: unset;
-    width: 95%;
-    height: 50px;
-    background-color: indianred;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+/* Global //////////////////////////////////////////////////////////////////////////////*/
 
-  }
 
-  .resetCart {
-    all: unset;
-    background-color: #4CAF50;
-    width: 130px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 5px 20px 5px 20px;
-  }
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .buyNow {
-    all: unset;
-    background-color: #4CAF50;
-    width: 130px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 5px 20px 5px 20px;
-  }
+h3 {
+  all: unset;
+  background-color: white;
+}
 
-  .buyNowBox {
-    width: 95%;
-    height: 80px;
-    background-color: maroon;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+button:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px black;
+}
 
-  .cartTax {
-    font-size: 20px;
-  }
+button:active {
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px black;
+  opacity: 40%;
+}
 
-  .totalC {
-    font-size: 20px;
-  }
+h1 {
+  color: blue;
+  display: block;
+  text-align: center;
+}
 
-  .cartCost {
-    font-size: 20px;
-  }
+/* This is calculator /////////////////////////////////////////////////////////////////*/
 
-  .cartList {
-    font-size: 20px;
-  }
+.calculator {
+  height: 400px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px 5px;
+  background-color: black;
+  display: flex;
+  border-radius: 5%;
+}
 
-  .checkout {
-    margin: 0px 10px 10px 10px;
-    height: 150px;
-    width: 880px;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+.container {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  .screenbtn {
-    all: unset;
-    background-color: #0d4b08;
-    width: 170px;
-    height: 50px;
-    border-radius: 5px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.container button {
+  margin: 5px;
+}
 
-  .screen {
-    background-color: #0d4b08;
-    width: 170px;
-    height: 50px;
-    border-radius: 5px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.screen {
+  background-color: #0d4b08;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .resetscorebtn {
-    all: unset;
-    background-color: #419cd1;
-    width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.screenbtn {
+  all: unset;
+  background-color: #0d4b08;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .resetscorebtn:hover {
-    border: 1px solid black;
-    box-shadow: 0px 0px 5px black;
-    border-radius: 10px;
-  }
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(46, 89, 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  display: block;
+}
 
-  .resetscore {
-    background-color: #4CAF50;
-    height: 30px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.box1 {
+  width: 50px;
+  height: 16px;
+  background-color: rgb(46, 89, 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  display: block;
+}
 
-  .overalltxt {
-    all: unset;
-    color: black;
-    font-weight: bold;
-  }
+/* This is shop //////////////////////////////////////////////////////////////////////*/
 
-  .overall {
-    background-color: yellow;
-    height: 30px;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.shop {
+  width: 900px;
+  height: 650px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-  .extras {
-    background-color: blue;
-    width: 300px;
-    height: 30px;
-    display: flex;
-  }
+.shoplist {
+  margin: 10px;
+  width: 880px;
+  height: 463px;
+  background-color: orangered;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .score {
-    background-color: fuchsia;
-    width: 80px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto auto auto;
-  }
+.item1 {
+  all: unset;
+  width: 200px;
+  height: 210px;
+  background-color: blue;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .ResultsBox {
-    height: 93px;
-    width: auto;
-    background-color: red;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+.itemimg {
+  margin: 5px;
+}
 
-  .rpssubtitlebox {
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.info {
+  /* background-color: green; */
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  .rpssubtitle {
-    all: unset;
-  }
+.addToCart {
+  width: 170px;
+  line-height: 20px;
+  display: inline;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
 
-  .pmoves {
-    background-color: violet;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    height: 50px;
-  }
+.checkout {
+  margin: 0px 10px 10px 10px;
+  height: 150px;
+  width: 880px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  .gamebtn {
-    all: unset;
-    background-color: #4CAF50;
-    height: 50px;
-    width: 55px;
-    text-align: center;
-    border-radius: 50%;
-  }
+.summaryBox {
+  all: unset;
+  width: 95%;
+  height: 50px;
+  background-color: indianred;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .gamebtn:hover {
-    border: 1px solid black;
-    box-shadow: 0px 0px 3px black;
-  }
+.cartList {
+  font-size: 20px;
+}
 
-  .rps {
-    border: 2px solid black;
-    border-radius: 2px;
-    background-color: rosybrown;
-    height: 200px;
-    width: 400px;
-  }
+.cartCost {
+  font-size: 20px;
+}
 
-  .info {
-    /* background-color: green; */
-    width: 200px;
-    display: flex;
-    justify-content: space-evenly;
-  }
+.cartTax {
+  font-size: 20px;
+}
 
-  h3 {
-    all: unset;
-    background-color: white;
-  }
+.totalC {
+  font-size: 20px;
+}
 
-  .addToCart {
-    width: 170px;
-    line-height: 20px;
-    display: inline;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
-  }
+.buyNowBox {
+  width: 95%;
+  height: 80px;
+  background-color: maroon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .itemimg {
-    margin: 5px;
-  }
+.buyNow {
+  all: unset;
+  background-color: #4CAF50;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 5px 20px 5px 20px;
+}
 
-  .item1 {
-    all: unset;
-    width: 200px;
-    height: 210px;
-    background-color: blue;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.resetCart {
+  all: unset;
+  background-color: #4CAF50;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 5px 20px 5px 20px;
+}
 
-  .shop {
-    width: 900px;
-    height: 650px;
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+/* This is rps ////////////////////////////////////////////////////////////////////////*/
 
-  .shoplist {
-    margin: 10px;
-    width: 880px;
-    height: 463px;
-    background-color: orangered;
-    display: flex;
-    flex-wrap: wrap;
-  }
+.rps {
+  border: 2px solid #000000;
+  border-radius: 2px;
+  background-color: #2e598a;
+  height: 380px;
+  width: 600px;
+}
 
-  .calculator {
-    height: 400px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px 5px;
-    background-color: black;
-    display: flex;
-    border-radius: 5%;
+.rpssubtitlebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 5px;
+}
 
-  }
+.rpssubtitle {
+  all: unset;
+  background-color: #1278c0;
+  margin: 2px 5px;
+  padding: 5px;
+  border-radius: 15px;
+}
 
-  .container {
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+.pmoves {
+  background-color: #2e598a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  height: 150px;
+}
 
-  .container button {
-    margin: 5px;
-  }
+.gamebtn {
+  all: unset;
+  background-color: #4CAF50;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50%;
+}
 
-  button:hover {
-    border: 1px solid black;
-    box-shadow: 0px 0px 3px black;
-  }
+.gamebtn:hover {
+  border: 0px solid black;
+  box-shadow: 0px 0px 5px black;
+}
 
-  button:active {
-    border: 1px solid black;
-    box-shadow: 0px 0px 3px black;
-    opacity: 40%;
-  }
+.ResultsBox {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+}
 
-  body {
-    margin: 0px;
-    padding: 0px;
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.rps-results {
+  background-color: yellow;
+  height: 130px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  h1 {
-    color: blue;
-    display: block;
-    text-align: center;
-  }
+.scoretxt {
+  font-size: 25px;
+  display: block;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
 
-  .box {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(46, 89, 138);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    display: block;
-  }
+.score {
+  background-color: yellow;
+  height: 130px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .box1 {
-    width: 50px;
-    height: 16px;
-    background-color: rgb(46, 89, 138);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    display: block;
-  }
+.winsd {
+  all: unset;
+  font-size: 18px;
+  margin: 0px 0px 10px 0px;
+}
+
+.lossesd {
+  all: unset;
+  font-size: 18px;
+  margin: 0px 0px 10px 0px;
+}
+
+.tiesd {
+  all: unset;
+  font-size: 18px;
+  margin: 0px 0px 10px 0px;
+}
+
+.extras {}
+
+.overall {
+  background-color: rgb(212, 121, 212);
+  width: 150px;
+  text-align: center;
+}
+
+.overallTitle {
+  all: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.overalltxt {
+  all: unset;
+  display: block;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.resultImg {
+  width: 90px;
+  height: 80px;
+  background: transparent;
+}
+
+.resetscore {
+  background-color: #4CAF50;
+  height: 130px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 5px 0px;
+}
+
+.resetscorebtn {
+  all: unset;
+  background-color: #419cd1;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.resetscorebtn:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px black;
+}

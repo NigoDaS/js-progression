@@ -20,7 +20,7 @@ function resetScore() {
   document.querySelector('.winsd').innerHTML = `Wins: ${score.wins}`;
   document.querySelector('.lossesd').innerHTML = `Losses: ${score.losses}`;
   document.querySelector('.tiesd').innerHTML = `Ties: ${score.ties}`;
-  document.querySelector('.overalltxt').innerHTML = `Result: --`
+  document.querySelector('.overalltxt').innerHTML = `--`
 }
 
 function playGame(playerMove) {
