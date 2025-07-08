@@ -1,0 +1,16 @@
+li {
+  all: unset;
+  font-size: 25px;
+}
+
+
+.deleteBtn {
+  all: unset;
+  background-color: white;
+  padding: 3px;
+  text-align: center;
+}
+
+.deleteBtn:hover {
+  text-shadow: 0px 0px 30px blue;
+}
