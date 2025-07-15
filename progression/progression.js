@@ -230,3 +230,43 @@ function updateCartDisplay() {
   document.querySelector('.cartCost').innerHTML = `Cost: $0`;
   document.querySelector('.cartTax').innerHTML = `Tax: $0`;
 }
+
+
+let noteList = [];
+
+function renderNotes() {
+  let noteListHtml = '';
+  for (let i = 0; i < noteList.length; i++) {
+    const noteObject = noteList[i];
+    const { name, dueDate } = noteObject;
+    const html = `
+      <div class="note">
+        <p class="noteTxt">${name}</p>
+        <p class="noteDate">${dueDate}</p>
+        <button class="onNoteDelete" onclick="deleteNote(${i})">Delete</button>
+        <buttton>Edit</button>
+      </div>
+    `;
+    noteListHtml += html;
+  }
+  document.querySelector('.notepad').innerHTML = noteListHtml;
+}
+
+function addNote() {
+  const inputElement = document.querySelector('.userInput');
+  const userInput = inputElement.value.trim();
+  const inputDateElement = document.querySelector('.userDateInput');
+  const userDateInput = inputDateElement.value;
+
+  if (!userInput) return;
+
+  noteList.push({ name: userInput, dueDate: userDateInput });
+  inputElement.value = '';
+  inputDateElement.value = '';
+  renderNotes();
+}
+
+function deleteNote(index) {
+  noteList.splice(index, 1);
+  renderNotes();
+}

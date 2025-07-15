@@ -378,9 +378,12 @@ h1 {
   box-shadow: 0px 0px 5px black;
 }
 
+
+/* Notes ///////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .Notes {
-  width: 800px;
-  height: 700px;
+  width: 820px;
+  height: 800px;
   background: #4b014b;
   border-radius: 10px;
   padding: 10px;
@@ -397,6 +400,14 @@ h1 {
   border-radius: 8px;
   padding: 10px;
   overflow-y: auto;
+}
+
+.note {
+  background-color: #4b014b;
+  height: 180px;
+  width: 180px;
+  display: inline-block;
+  margin: 5px 5px 10px 5px;
 }
 
 
@@ -434,11 +445,11 @@ h1 {
   border: 1px solid #aaa;
   border-radius: 5px;
   color: black;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .rightInputs button {
-  margin-right: 33px;
+  margin-right: 43px;
   padding: 10px;
   background: white;
   color: black;

@@ -12,7 +12,9 @@
   <h1>Calculator</h1>
   <div class="calculator">
     <div class="container">
-      <div class="screen"><button class="screenbtn">Calculate!</button></div>
+      <div class="screen">
+        <div class="screenbtn">Calculate!</div>
+      </div>
       <button onclick="updateCalculation('1');" class="box">1</button>
       <button onclick="updateCalculation('2');" class="box">2</button>
       <button onclick="updateCalculation('3');" class="box">3</button>
@@ -163,21 +165,24 @@
       </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br> -->
+  
+  
+  
+  
   <h1>Notes</h1>
   <div class="Notes">
     <div class="notepad">
-      <!-- Notes will appear here -->
+      <div class="note"></div>
     </div>
-
     <div class="noteInputs">
       <div class="inputs">
         <textarea class="userInput" placeholder="Type here..."></textarea>
       </div>
 
       <div class="rightInputs">
-        <input type="date" class="userDateInput"/>
+        <input type="date" class="userDateInput" />
         <div class="addNoteBtnBox">
-          <button class="addNoteBtn">Add Note</button>
+          <button onclick="addNote()" class="addNoteBtn">Add Note</button>
         </div>
         <div class="resetNotesBtnBox">
           <button class="resetNotesBtn">Reset Notes</button>
@@ -191,7 +196,7 @@
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <script src="progression.js"></script>
 
