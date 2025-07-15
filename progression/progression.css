@@ -379,7 +379,7 @@ h1 {
 }
 
 
-/* Notes ///////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Notes ///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .Notes {
   width: 820px;
@@ -400,23 +400,70 @@ h1 {
   border-radius: 8px;
   padding: 10px;
   overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .note {
   background-color: #4b014b;
-  height: 180px;
+  height: 160px;
   width: 180px;
-  display: inline-block;
-  margin: 5px 5px 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 6px;
+  text-align: center;
 }
 
+.noteTxt {
+  color: yellow;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  flex-grow: 1;
+  max-height: 70px;
+  margin-bottom: 2px;
+  font-size: 0.85rem;
+}
+
+.sumsum {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.noteDate {
+  font-size: 0.7rem;
+  color: #ddd;
+  margin-bottom: 2px;
+}
+
+.onNoteDelete,
+.editNote {
+  background-color: #320032;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  width: 80px;
+}
+
+.onNoteDelete:hover,
+.editNote:hover {
+  box-shadow: 0 0 4px white;
+}
 
 .noteInputs {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-
 
 .userInput {
   flex: 1;
