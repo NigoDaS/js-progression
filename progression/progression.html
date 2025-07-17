@@ -38,8 +38,8 @@
     </div>
   </div>
   <br><br><br><br><br>
-  <h1>Rock Paper Scissors</h1>
-  <div class="rps">
+  <!-- <h1>Rock Paper Scissors</h1> -->
+  <!-- <div class="rps">
     <div class="rpssubtitlebox">
       <p class="rpssubtitle">Pick a move</p>
     </div>
@@ -71,7 +71,46 @@
         <div class="resetscore"><button onclick="resetScore();" class="resetscorebtn">Reset score</button></div>
       </div>
     </div>
+  </div> -->
+
+  <h1>Rock Paper Scissors</h1>
+  <div class="rps">
+    <div class="buttons">
+      <button class="rockBtn" onclick="
+      playGame('rock');
+    "><img class="rockImg" src="images/rock-emoji.png" alt="" width="80px" height="80px"></button>
+
+      <button class="rockBtn" onclick="
+      playGame('paper');
+    "><img class="rockImg" src="images/paper-emoji.png" alt="" width="80px" height="80px"></button>
+
+      <button class="rockBtn" onclick="
+      playGame('scissors');
+    "><img class="rockImg" src="images/scissors-emoji.png" alt="" width="80px" height="80px"></button>
+    </div>
+    <div class="hiddenImgs">
+      <img class="rockPull, rockImg" src="images/rock-emoji.png" alt="" width="80px" height="80px">
+      <img class="paperPull, rockImg" src="images/paper-emoji.png" alt="" width="80px" height="80px">
+      <img class="scissorsPull, rockImg" src="images/scissors-emoji.png" alt="" width="80px" height="80px">
+    </div>
+
+
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    " class="reset-score-button">Reset Score</button>
+
+    <button onclick="autoPlay()" class="autoRps">AutoPlay</button>
   </div>
+
   <br><br><br><br><br>
   <!-- <h1>Shop</h1>
     <div class="shop">
