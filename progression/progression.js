@@ -7,62 +7,8 @@ function updateCalculation(value) {
   document.querySelector('.screen').innerHTML = calculation;
 }
 
-// --- ROCK PAPER SCISSORS GAME ---
-// let score = JSON.parse(localStorage.getItem('score')) || {
-//   wins: 0,
-//   losses: 0,
-//   ties: 0
-// };
 
-// function resetScore() {
-//   score.wins = 0;
-//   score.losses = 0;
-//   score.ties = 0;
-//   localStorage.removeItem('score');
-//   updateScoreDisplay();
-// }
-
-// function playGame(playerMove) {
-//   const computerMove = pickComputerMove();
-//   let result = '';
-
-//   if (playerMove === 'scissors') {
-//     if (computerMove === 'rock') result = 'You lose.';
-//     else if (computerMove === 'paper') result = 'You win.';
-//     else result = 'Tie.';
-//   } else if (playerMove === 'paper') {
-//     if (computerMove === 'rock') result = 'You win.';
-//     else if (computerMove === 'paper') result = 'Tie.';
-//     else result = 'You lose.';
-//   } else if (playerMove === 'rock') {
-//     if (computerMove === 'rock') result = 'Tie.';
-//     else if (computerMove === 'paper') result = 'You lose.';
-//     else result = 'You win.';
-//   }
-
-//   if (result === 'You win.') score.wins++;
-//   else if (result === 'You lose.') score.losses++;
-//   else if (result === 'Tie.') score.ties++;
-
-//   localStorage.setItem('score', JSON.stringify(score));
-//   updateScoreDisplay();
-//   document.querySelector('.overalltxt').innerHTML = result;
-// }
-
-// function pickComputerMove() {
-//   const randomNumber = Math.random();
-//   if (randomNumber < 1 / 3) return 'rock';
-//   else if (randomNumber < 2 / 3) return 'paper';
-//   else return 'scissors';
-// }
-
-// function updateScoreDisplay() {
-//   document.querySelector('.winsd').innerHTML = `Wins: ${score.wins}`;
-//   document.querySelector('.lossesd').innerHTML = `Losses: ${score.losses}`;
-//   document.querySelector('.tiesd').innerHTML = `Ties: ${score.ties}`;
-//   document.querySelector('.overalltxt').innerHTML = `--`;
-// }
-
+// --- RPS ---
 let score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
   losses: 0,
@@ -171,6 +117,32 @@ function autoPlay() {
   }
 }
 
+document.querySelector('.autoRps').addEventListener('click', () => {
+  autoPlay();
+})
+
+document.querySelector('.rockBtn').addEventListener('click', () => {
+  playGame('rock');
+})
+document.querySelector('.paperBtn').addEventListener('click', () => {
+  playGame('paper');
+})
+document.querySelector('.scissorsBtn').addEventListener('click', () => {
+  playGame('scissors');
+})
+
+document.body.addEventListener('keydown', (event) => {
+   if(event.key === 'r') {
+     playGame('rock')
+   }
+   else if (event.key === 'p') {
+    playGame('paper')
+   }
+   else if (event.key === 's') {
+    playGame('scissors')
+   }
+})
+
 // --- CART SYSTEM ---
 let cQuantity = 0;
 let totalC = 0;
@@ -278,8 +250,18 @@ function loadNotesFromStorage() {
   }
 }
 
+document.querySelector('.addNoteBtnBox').addEventListener('click', () => {
+  addNote();
+})
+
+document.querySelectorAll('.onNoteDelete').forEach((deleteButton, index) => {
+  deleteButton.addEventListener('click', () => {
+    deleteNote(i)
+  })
+})
+
+
 window.onload = function () {
-  updateScoreDisplay();
   loadNotesFromStorage();
 
   const resetBtn = document.getElementById('resetNotesBtn');

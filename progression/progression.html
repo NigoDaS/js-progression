@@ -38,55 +38,21 @@
     </div>
   </div>
   <br><br><br><br><br>
-  <!-- <h1>Rock Paper Scissors</h1> -->
-  <!-- <div class="rps">
-    <div class="rpssubtitlebox">
-      <p class="rpssubtitle">Pick a move</p>
-    </div>
-    <div class="pmoves">
-      <button onclick="playGame('rock')" class="gamebtn">Rock</button>
-      <button onclick="playGame('paper')" class="gamebtn">Paper</button>
-      <button onclick="playGame('scissors')" class="gamebtn">Scissors</button>
-    </div>
-    <div class="rpssubtitlebox">
-      <p class="rpssubtitle">Score:</p>
-    </div>
-    <div>
-
-    </div>
-    <div class="ResultsBox">
-      <div class="rps-results">
-        <div class="score">
-          <p class="scoretxt">Score</p>
-          <p class="winsd">Wins: 0</p>
-          <p class="lossesd">Losses: 0</p>
-          <p class="tiesd">Ties: 0</p>
-        </div>
-      </div>
-      <div class="overall">
-        <p class="overallTitle">Result</p>
-        <p class="overalltxt">--</p>
-      </div>
-      <div>
-        <div class="resetscore"><button onclick="resetScore();" class="resetscorebtn">Reset score</button></div>
-      </div>
-    </div>
-  </div> -->
 
   <h1>Rock Paper Scissors</h1>
   <div class="rps">
     <div class="buttons">
-      <button class="rockBtn" onclick="
-      playGame('rock');
-    "><img class="rockImg" src="images/rock-emoji.png" alt="" width="80px" height="80px"></button>
+      <button class="rockBtn">
+        <img class="rockImg" src="images/rock-emoji.png" alt="" width="80px" height="80px">
+      </button>
 
-      <button class="rockBtn" onclick="
-      playGame('paper');
-    "><img class="rockImg" src="images/paper-emoji.png" alt="" width="80px" height="80px"></button>
+      <button class="paperBtn">
+        <img class="rockImg" src="images/paper-emoji.png" alt="" width="80px" height="80px">
+      </button>
 
-      <button class="rockBtn" onclick="
-      playGame('scissors');
-    "><img class="rockImg" src="images/scissors-emoji.png" alt="" width="80px" height="80px"></button>
+      <button class="scissorsBtn">
+        <img class="rockImg" src="images/scissors-emoji.png" alt="" width="80px" height="80px">
+      </button>
     </div>
     <div class="hiddenImgs">
       <img class="rockPull, rockImg" src="images/rock-emoji.png" alt="" width="80px" height="80px">
@@ -108,105 +74,109 @@
       updateScoreElement();
     " class="reset-score-button">Reset Score</button>
 
-    <button onclick="autoPlay()" class="autoRps">AutoPlay</button>
+    <button class="autoRps">AutoPlay</button>
   </div>
 
   <br><br><br><br><br>
-  <!-- <h1>Shop</h1>
-    <div class="shop">
-      <div class="shoplist">
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+
+  <h1>Shop</h1>
+  <div class="shopBox">
+    <div class="shopList">
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
         </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
-        </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
-        </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
-        </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
-        </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
-        </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
-        </div>
-        <div class="item1">
-          <img src="https://i.ibb.co/7thKrKFx/basketball-ball-isolated-on-white-600nw-2492633873.webp" alt=""
-            width="170px" height="140px" class="itemimg">
-          <div class="info">
-            <h3>Price:$5.99</h3>
-            <h3>Quantity</h3>
-          </div>
-          <button onclick="updateCart('basketball', 5.99)" class="addToCart">Add to cart</button>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
         </div>
       </div>
-      <div class="checkout">
-        <div class="summaryBox">
-          <div>
-            <p class="cartList">Cart:</p>
-          </div>
-          <p class="cartCost">Cost:</p>
-          <p class="cartTax">Tax:</p>
-          <p class="totalC">Total:</p>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
         </div>
-        <div class="buyNowBox">
-          <button class="buyNow">Buy now</button>
-          <button onclick="resetCart()" class="resetCart">Reset Cart</button>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
+        </div>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
+        </div>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
+        </div>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
+        </div>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
+        </div>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="itemImageBox">
+          <img class="itemImage" src="images\rock-emoji.png" alt="">
+        </div>
+        <div class="stats">
+          <p class="itemName">Basketball</p>
+          <p class="itemPrice">$4.99</p><br>
+          <button class="addItemToCart">Add to cart</button>
+          <button>eee</button>
         </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br> -->
+    <div class="checkout">
 
+    </div>
+  </div>
 
-
+  <br><br><br><br><br><br><br><br><br><br><br>
 
   <h1>Notes</h1>
   <div class="Notes">
@@ -221,7 +191,7 @@
       <div class="rightInputs">
         <input type="date" class="userDateInput" />
         <div class="addNoteBtnBox">
-          <button onclick="addNote()" class="addNoteBtn">Add Note</button>
+          <button class="addNoteBtn">Add Note</button>
         </div>
         <div class="resetNotesBtnBox">
           <button id="resetNotesBtn" class="resetNotesBtn">Reset Notes</button>
@@ -229,11 +199,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
 
   <br><br><br><br><br><br><br><br><br><br><br>
 </body>
