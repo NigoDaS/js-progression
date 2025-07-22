@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "javascript-amazon-project",
+			"path": "../../javascript-amazon-project"
+		},
+		{
+			"name": "js-practice",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript-amazon-project"
+	}
+}
