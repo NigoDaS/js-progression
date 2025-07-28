@@ -1,6 +1,5 @@
-import { cart } from '../data/cart.js'
-import { products } from '../data/products.js';
-
+import {cart} from '../data/cart.js'
+import {products} from '../data/products.js';
 
 let cartHTML = '';
 
@@ -10,12 +9,14 @@ cart.forEach((cartItem) => {
   let matchingProduct;
 
   products.forEach((product) => {
-    if (product.Id === productId) {
+    if (product.id === productId) {
       matchingProduct = product;
     }
   });
 
   console.log(matchingProduct);
+
+
 
   `
   <div class="cart-item-container">
@@ -94,4 +95,4 @@ cart.forEach((cartItem) => {
     </div>
   </div>
   `
-})
+});
