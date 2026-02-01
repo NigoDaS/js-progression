@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <script>
+    //////////////////MAP///////////////////////////////////////
+
+
+    // Ver 0 - BAD
+
+    // let nums = [1, 2, 3, 4];
+
+    // nums = nums.map(num => checkIfOdd(num));
+
+    // console.log(nums);
+
+    // function checkIfOdd(num) {
+    //   if (num % 2 === 0) {
+    //     return "even"
+    //   } else {
+    //     return "odd"
+    //   }
+    // }
+
+    // Ver 1 - decent
+
+    // let nums = [1, 2, 3, 4];
+
+    // let result = nums.map(num => {
+    //   if (num % 2 === 0) {
+    //     return "even";
+    //   } else {
+    //     return "odd";
+    //   }
+    // });
+
+    // console.log(result);
+
+    // Ver 2 - best practice
+
+    // let nums = [1, 2, 3, 4];
+
+    // let result = nums.map(num => num % 2 === 0 ? "even" : "odd")
+
+    // console.log(result);
+
+    // Ver 3 - trough function
+
+    // let nums = [1, 2, 3, 4];
+
+    // function checkIfOd(num) {
+    //   return num % 2 === 0 ? "even" : "odd";
+    // }
+
+    // let result = nums.map(checkIfOd)
+
+    // console.log(result);
+
+
+
+
+    //////////////FILTER/////////////////////////////////////////
+
+    // const nums = [1, 3, 6, 8, 2, 10];
+
+    // const evens = nums.filter(num => num > 5);
+
+    // console.log(evens);
+
+    /////////////REDUCE/////////////////////////////////////
+
+    // Ver 0 - Bad
+
+    const nums = [1, 2, 3, 4, 5, 6];
+
+    const sum = nums.reduce((total, num) => {
+      if (num % 2 === 0) {
+        total++;
+      }
+      return total;
+    }, 0);
+
+    console.log(sum);
+
+    //Ver 1 - best practice
+
+    const count = nums.reduce((total, num) =>
+      num % 2 === 0 ? total + 1 : total
+      , 0);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // const students = [
+    //   { name: "Alex", score: 85, passed: true },
+    //   { name: "Sam", score: 42, passed: false },
+    //   { name: "Jordan", score: 73, passed: true },
+    //   { name: "Taylor", score: 30, passed: false },
+    //   { name: "Morgan", score: 91, passed: true }
+    // ];
+
+    // const avg = students
+    //   .filter(s => s.passed)
+    //   .map(s => s.score)
+    //   .reduce((total, score) => total + score, 0)
+    //   / students.filter(s => s.passed).length;
+
+    // console.log(avg);
+
+    // const orders = [
+    //   { id: 1, user: "Alex", total: 120, status: "completed" },
+    //   { id: 2, user: "Sam", total: 80, status: "pending" },
+    //   { id: 3, user: "Alex", total: 50, status: "completed" },
+    //   { id: 4, user: "Jordan", total: 200, status: "completed" },
+    //   { id: 5, user: "Sam", total: 30, status: "cancelled" }
+    // ];
+
+    // const revenue = orders
+    //   .filter(i => i.status === "completed" && i.user === "Alex")
+    //   .map(i => i.total)
+    //   .reduce((total, i) => total + i, 0)
+
+    // console.log(revenue) 
+
+    // const products = [
+    //   { name: "Phone", price: 800, inStock: true },
+    //   { name: "Case", price: 20, inStock: true },
+    //   { name: "Tablet", price: 600, inStock: false },
+    //   { name: "Laptop", price: 1500, inStock: true }
+    // ];
+
+    // const result = products
+    //   .filter(p => p.price > 500 && p.inStock)
+    //   .map(p => p.price)
+    //   .reduce((total, p) => total + p, 0)
+
+
+    // console.log(result)
+
+    // const users = [
+    //   { username: "alex01", active: true },
+    //   { username: "sam02", active: false },
+    //   { username: "jordan03", active: true }
+    // ];
+
+    // const result = users
+    //   .filter(u => u.active)
+    //   .map(u => u.username.toUpperCase())
+
+    // console.log(result)
+
+    // const numbers = [1, 2, 3, 4, 5, 6];
+
+    // const eSqrt = numbers
+    //   .filter(n => n % 2 === 0)
+    //   .map(n => n ** 2)
+    //   .reduce((total, n) => total + n, 0)
+
+    // console.log(eSqrt)
+
+    // const students = [
+    //   { name: "A", score: 90 },
+    //   { name: "B", score: 45 },
+    //   { name: "C", score: 70 },
+    //   { name: "D", score: 30 }
+    // ];
+
+    // const result = students
+    //   .filter(s => s.score >= 50)
+    //   .reduce((count, s) => count + 1 ,0)
+
+
+    // console.log(result)
+
+
+    // const orders = [
+    //   { item: "Book", price: 10, qty: 2 },
+    //   { item: "Pen", price: 2, qty: 5 },
+    //   { item: "Bag", price: 50, qty: 1 }
+    // ];
+
+    // const result1 = orders
+    //   .map(i => `${i.item} x${i.qty}`)
+
+    // const result2 = orders
+    //   .reduce((total, i) => total + (i.price * i.qty), 0)
+
+
+    // console.log(result1)
+    // console.log(result2)
+
+    // const inventory = [
+    //   { name: "Laptop", category: "electronics", price: 1200, stock: 5 },
+    //   { name: "Phone", category: "electronics", price: 800, stock: 0 },
+    //   { name: "Desk", category: "furniture", price: 300, stock: 3 },
+    //   { name: "Chair", category: "furniture", price: 150, stock: 8 },
+    //   { name: "Monitor", category: "electronics", price: 450, stock: 2 },
+    //   { name: "Lamp", category: "furniture", price: 40, stock: 0 }
+    // ];
+
+    // const chainA = inventory
+    //   .filter(i => i.stock > 0 && i.category === "electronics")
+    //   .sort((a, b) => b.price - a.price)
+    //   .map(i => i.name)
+
+    // const chainB = inventory 
+    //   .reduce((total, i) => i.stock > 0 && i.category === "furniture" ? total + (i.price * i.stock) : total, 0)
+
+    // console.log(chainA)
+    // console.log(chainB)
+
+    const transactions = [
+      { user: "Alex", amount: 50, type: "spent" },
+      { user: "Alex", amount: 120, type: "spent" },
+      { user: "Alex", amount: 30, type: "refund" },
+      { user: "Sam", amount: 80, type: "spent" },
+      { user: "Sam", amount: 40, type: "refund" },
+      { user: "Jordan", amount: 200, type: "spent" },
+      { user: "Jordan", amount: 60, type: "spent" }
+    ];
+
+    const chainA = transactions
+      .reduce((total, u) => u.user === "Alex" && u.type === "spent" ? total + u.amount : total, 0)
+
+    const chainB = [...new Set(
+      transactions
+        .filter(u => u.type === "refund")
+        .map(u => u.user)
+    )];
+
+    const chainC = transactions
+      .reduce((total, u) => {
+        if (!total[u.user]) {
+          total[u.user] = 0;
+        }
+
+        if (u.type === "spent") {
+          total[u.user] += u.amount;
+        }else {
+          total[u.user] -= u.amount;
+        }
+
+        return total;
+
+      }, {})
+
+
+    console.log(chainA)
+    console.log(chainB)
+    console.log(chainC)
+  </script>
+</body>
+
+</html>

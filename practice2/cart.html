@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const cart = [
+      { name: "Laptop", price: 1200, inStock: true, qty: 1 },
+      { name: "Mouse", price: 25, inStock: true, qty: 2 },
+      { name: "Keyboard", price: 75, inStock: false, qty: 1 },
+      { name: "Monitor", price: 300, inStock: true, qty: 2 }
+    ];
+
+
+    // const inStock = cart.filter(item => item.inStock)
+    // console.log(inStock);
+
+    // let result = inStock.map(item => `${item.name} x${item.qty}`)
+    // console.log(result);
+
+    // let tCost = inStock.reduce((total, item) =>
+    //   total + item.price * item.qty
+    //   , 0);
+
+    // console.log(tCost);
+
+    const totalCost = cart
+      .filter(item => item.inStock)
+      .reduce((total, item) => total + item.price * item.qty, 0);
+
+    console.log(totalCost)
+
+
+
+
+
+  </script>
+</body>
+
+</html>

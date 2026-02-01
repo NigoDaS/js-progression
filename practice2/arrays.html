@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>Current Array:
+  <div id="arrayDisplay">[]</div>
+  </p>
+  <button onclick="reset()">reset</button>
+  <button onclick="push()">Push</button>
+  <button onclick="pop()">Pop</button>
+  <button onclick="shift()">Shift</button>
+  <button onclick="reverse()">Reverse</button>
+  <button onclick="splice()">Splice</button>
+  <button onclick="sort()">Sort</button>
+  <button onclick="map()">Map</button>
+</body>
+
+<script>
+  let arr = [1, 2, 3];
+  updateDisplay();
+
+  function updateDisplay() {
+    document.getElementById('arrayDisplay').textContent = JSON.stringify(arr);
+  }
+
+
+  function reset() {
+    arr = [1, 2, 3];
+    updateDisplay();
+    // resetuje array
+  }
+
+  function push() {
+    arr.push(Math.floor(Math.random() * 10));
+    updateDisplay();
+    // doda random broj zaokruzen na ceo broj na kraj
+  }
+
+  function pop() {
+    arr.pop();
+    updateDisplay()
+    // izbrise sa kraja
+  }
+
+  function shift() {
+    arr.shift();
+    updateDisplay();
+    // izbrise sa pocetka
+  }
+
+  function reverse() {
+    arr.reverse();
+    updateDisplay();
+    // obrne array
+  }
+
+  function splice() {
+    arr.splice(1, 1, 99);
+    updateDisplay();
+    // zameni broj u indexu 1 sa 99
+  }
+
+  function sort() {
+    arr.sort((a, b) => b - a)
+    updateDisplay();
+    // sortira od najveceg do najmanjeg
+  }
+
+  function map() {
+    arr = arr.map(num => num * 2);
+    updateDisplay();
+    // duplira brojeve
+  }
+
+  function filter() {
+    arr = arr.filter(num => num % 2 === 0);
+    updateDisplay();
+    // ostavi samo ono sto je deljivo sa 2
+  }
+
+</script>
+
+</html>

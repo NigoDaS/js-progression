@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" class="userInput" placeholder="...">
+<button onclick="addToArray()">Add</button>
+<button onclick="resetArray()">Reset</button>
+
+<div id="arrayDisplay">[]</div>
+</body>
+
+<script>
+let array = [];
+
+function resetArray() {
+  array = [];
+  updateDisplay();
+  localStorage.removeItem('userArray');
+}
+
+if (localStorage.getItem('userArray')) {
+  array = JSON.parse(localStorage.getItem('userArray'));
+  updateDisplay();
+}
+
+function updateDisplay() {
+  document.getElementById('arrayDisplay').textContent = JSON.stringify(array);
+}
+
+function addToArray() {
+  const inputElement = document.querySelector('.userInput');
+  const userInput = inputElement.value.trim();
+
+  if (!userInput) return;
+
+  array.push(userInput);
+
+  localStorage.setItem('userArray', JSON.stringify(array));
+
+  inputElement.value = '';
+
+  updateDisplay();
+}
+
+</script>
+</html>
